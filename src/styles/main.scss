@@ -1,0 +1,11 @@
+$body-color: red;
+body {
+    background-color: $body-color;
+}
+
+@font-face {
+    font-family: "Ubuntu";
+    src: url("../assets/fonts/ubuntu-regular.woff2") format('woff2'), url("../assets/fonts/ubuntu-regular.woff") format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
