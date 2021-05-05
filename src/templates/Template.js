@@ -1,7 +1,7 @@
-import getData from '../utils/getData.js';
-import Twitter from '../assets/images/twitter.png';
-import Instagram from '../assets/images/instagram.png';
-import Github from '../assets/images/github.png';
+import getData from '@utils/getData.js';
+import Twitter from '@images/twitter.png';
+import Instagram from '@images/instagram.png';
+import Github from '@images/github.png';
 
 
 const Template = async() => {

@@ -1,8 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const CopyPlugin = require('copy-webpack-plugin');
-const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const Dotenv = require('dotenv-webpack');
 
 module.exports = {
@@ -13,7 +11,8 @@ module.exports = {
         assetModuleFilename: 'assets/images/[hash][ext][query]',
         clean: true,
     },
-    mode: 'production',
+    mode: 'development',
+    watch: true,
     resolve: {
         extensions: ['.js', '.mjs'],
         alias: {
@@ -68,12 +67,4 @@ module.exports = {
         }),
         new Dotenv(),
     ],
-    optimization: {
-        minimize: true,
-        minimizer: [
-            // For webpack@5 you can use the `...` syntax to extend existing minimizers (i.e. `terser-webpack-plugin`), uncomment the next line
-            `...`,
-            new CssMinimizerPlugin(),
-        ],
-    },
 }
