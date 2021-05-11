@@ -1,4 +1,4 @@
-$body-color: lightblue;
+$body-color: lightsalmon;
 body {
     background-color: $body-color;
 }
@@ -8,4 +8,9 @@ body {
     src: url("../assets/fonts/ubuntu-regular.woff2") format('woff2'), url("../assets/fonts/ubuntu-regular.woff") format('woff');
     font-weight: 400;
     font-style: normal;
+}
+
+.card {
+    background: lightseagreen;
+    color: white;
 }

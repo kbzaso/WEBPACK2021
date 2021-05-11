@@ -12,7 +12,6 @@ module.exports = {
         clean: true,
     },
     mode: 'development',
-    watch: true,
     resolve: {
         extensions: ['.js', '.mjs'],
         alias: {
@@ -67,4 +66,10 @@ module.exports = {
         }),
         new Dotenv(),
     ],
+    devServer: {
+        contentBase: path.join(__dirname, 'dist'),
+        compress: true,
+        historyApiFallback: true,
+        port: 3006,
+    }
 }
